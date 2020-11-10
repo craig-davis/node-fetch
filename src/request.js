@@ -18,7 +18,7 @@ const INTERNALS = Symbol('Request internals');
 /**
  * Check if `obj` is an instance of Request.
  *
- * @param  {*} obj
+ * @param  {*} object
  * @return {boolean}
  */
 const isRequest = object => {
@@ -149,7 +149,7 @@ Object.defineProperties(Request.prototype, {
 /**
  * Convert a Request to Node.js http request options.
  *
- * @param   Request  A Request instance
+ * @param   request  A Request instance
  * @return  Object   The options object to be passed to http.request
  */
 export const getNodeRequestOptions = request => {
